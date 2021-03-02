@@ -7,7 +7,6 @@ n=int(input("Enter count of vertices: "))
 vertices=[]
 for i in range(n):
     vertices.append(list(map(int,input("Enter coordinates of vertex #{}: ".format(i+1)).split())))
-minx, miny, maxx, maxy=0, 0, 0, 0
 minx, maxx = max_min(vertices[0][0], vertices[1][0])
 miny, maxy = max_min(vertices[0][1], vertices[1][1])
 for i in range(n//2-1):
