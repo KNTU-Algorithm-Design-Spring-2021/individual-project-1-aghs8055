@@ -18,14 +18,3 @@ def min_max(arr, start, end, index):
     else:
         maximum=min_max2[1]
     return minimum,maximum
-n=int(input("Enter count of vertices: "))
-vertices=[]
-for i in range(n):
-    vertices.append(list(map(int,input("Enter coordinates of vertex #{}: ".format(i+1)).split())))
-minx, maxx = min_max(vertices, 0, n, 0)
-miny, maxy = min_max(vertices, 0, n, 1)
-print("The minimum bounding box is:")
-print("x =", minx)
-print("x =", maxx)
-print("y =", miny)
-print("y =", maxy)
